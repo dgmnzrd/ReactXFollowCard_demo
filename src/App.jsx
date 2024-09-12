@@ -7,7 +7,7 @@ export function App () {
   const [array, setArray] = useState([])
 
   const fetchAPI = async () => {
-    const response = await axios.get("https://reactxfollowcard-server-demo.onrender.com:5000/api/users")
+    const response = await axios.get("127.0.0.1:18012/api/users")
     setArray(response.data.users)
   }
 
